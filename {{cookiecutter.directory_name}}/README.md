@@ -15,11 +15,6 @@ make env
 ```
 
 ## Install dependencies
-To install all dependencies for this project, run:
-```bash
-poetry install
-```
-
 To install a new package, run:
 ```bash
 poetry add <package-name>

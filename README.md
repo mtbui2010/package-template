@@ -31,22 +31,23 @@ This repository provides a template that incorporates best practices to create a
 │   ├── processed                   # data after processing
 │   ├── raw                         # raw data
 │   └── raw.dvc                     # DVC file of data/raw
+├── package_name                    # Packaging the inference            
+│   ├── inference.py                # Inference of models
+│   └── src                         # Source codes
+│       ├── models                  # Deep Learning odels 
+│       └── utils                   # Utilities
 ├── docs                            # documentation for your project
 ├── .gitignore                      # ignore files that cannot commit to Git
 ├── Makefile                        # store useful commands to set up the environment
-├── models                          # store models
+├── checkpoints                     # store checkpoints
 ├── notebooks                       # store notebooks
 ├── .pre-commit-config.yaml         # configurations for pre-commit
 ├── pyproject.toml                  # dependencies for poetry
 ├── README.md                       # describe your project
-├── src                             # store source code
-│   ├── __init__.py                 # make src a Python module 
-│   ├── process.py                  # process data before training model
-│   └── train_model.py              # train model
-└── tests                           # store tests
-    ├── __init__.py                 # make tests a Python module 
-    ├── test_process.py             # test functions for process.py
-    └── test_train_model.py         # test functions for train_model.py
+└── scripts                         # store tests
+    ├── process_data.py             # process data for test and train 
+    ├── test.py                     # test models
+    └── train.py                    # train models
 ```
 
 ## How to use this project
