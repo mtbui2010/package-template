@@ -49,6 +49,7 @@ coverage.xml
 *.mo
 *.pot
 
+
 # Django stuff:
 *.log
 
@@ -91,3 +92,5 @@ target/
 
 # Hydra logs
 outputs
+data
+checkpoints
