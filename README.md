@@ -18,14 +18,8 @@ This repository provides a template that incorporates best practices to create a
 ## Project Structure
 ```bash
 .
-├── config                      
-│   ├── main.yaml                   # Main configuration file
-│   ├── model                       # Configurations for training model
-│   │   ├── model1.yaml             # First variation of parameters to train model
-│   │   └── model2.yaml             # Second variation of parameters to train model
-│   └── process                     # Configurations for processing data
-│       ├── process1.yaml           # First variation of parameters to process data
-│       └── process2.yaml           # Second variation of parameters to process data
+├── configs                         # configurations of your models and data                     
+│   
 ├── data            
 │   ├── final                       # data after training the model
 │   ├── processed                   # data after processing
@@ -59,7 +53,7 @@ pip install cookiecutter
 
 Create a project based on the template:
 ```bash
-cookiecutter https://github.com/khuyentran1401/data-science-template --checkout dvc-poetry
+cookiecutter https://github.com/mtbui2010/package-template
 ```
 
 Resources for a detailed explanation of this template:
