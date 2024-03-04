@@ -16,6 +16,6 @@ tests:
 
 docs:
 	@echo Save documentation to docs... 
-	pdoc src -o docs --force
+	pdoc {{cookiecutter.directory_name}} -o docs --force
 	@echo View API documentation... 
-	pdoc src --http localhost:8080	
+	pdoc {{cookiecutter.directory_name}} --http localhost:8080
